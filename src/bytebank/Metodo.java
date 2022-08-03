@@ -13,6 +13,19 @@ public class Metodo {
 		boolean conseguiuRetirar = contaDaCris.saca(20);
 		System.out.println(contaDaCris.saldo);
 		System.out.println(conseguiuRetirar);
+
+		Conta contaDoRafael = new Conta();
+		contaDoRafael.deposita(1000);
+
+		if (contaDoRafael.transfere(300, contaDaCris)) {
+			System.out.println("transferencia com sucesso");
+		} else {
+			System.out.println("faltou dinheiro");
+		}
+
+		contaDoRafael.transfere(300, contaDaCris);
+		System.out.println(contaDoRafael.saldo);
+		System.out.println(contaDaCris.saldo);
 	}
 
 }
