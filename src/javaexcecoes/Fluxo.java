@@ -18,6 +18,7 @@ public class Fluxo {
         System.out.println("Inicio do metodo2");
         for(int i = 1; i <= 5; i++) {
             System.out.println(i);
+            int a = i / 0;
         }
         System.out.println("Fim do metodo2");
     }
@@ -25,10 +26,11 @@ public class Fluxo {
 }
 
 
-/* 
- Uma pilha Java faz parte da JVM e armazena os métodos que estão sendo executados. 
- Além do bloco de código a pilha guarda as variáveis e as referências desse bloco. 
- Assim a JVM organiza a execução e sabe exatamente qual método está sendo executado 
- que é sempre o método no topo da pilha. 
- 
+/* Exceções são problemas que acontecem
+ na hora de compilar o código. Toda exceção
+ possui um nome que a identifica.
+ Exceções não tratadas caem na pilha de
+ execução procurando por alguém
+ que saiba lidar com ela.
  */
+
