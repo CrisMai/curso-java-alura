@@ -1,10 +1,20 @@
 package javaexcecoes;
 
+import herdadoconta.Conta;
+
 public class Fluxo {
 
 	public static void main(String[] args) {
 		System.out.println("Inicio do main");
-		metodo1();
+		
+		try {
+			metodo1();
+		} catch (ArithmeticException | NullPointerException ex) {
+			String msg = ex.getMessage();
+			System.out.println("Exception " + msg);
+			ex.printStackTrace();
+		}
+		
 		System.out.println("Fim do main");
 	}
 
@@ -18,12 +28,10 @@ public class Fluxo {
 		System.out.println("Inicio do metodo2");
 		for (int i = 1; i <= 5; i++) {
 			System.out.println(i);
-
-			try {
-				int a = i / 0;
-			} catch (ArithmeticException ex) {
-				System.out.println("ArithmeticException");
-			}
+			int a = i / 0;
+			
+			//Conta c = null;
+			//c.deposita(i);
 		}
 		
 		System.out.println("Fim do metodo2");
@@ -34,9 +42,4 @@ public class Fluxo {
 
 
 
-/*
- Para tratarmos uma exceção usamos um código específico (try). Assim, a
- máquina entenderá que deve tentar executar esse código. Porém, o código nem
- compila e então, devemos usar outro bloco de código por meio de catch,
- sinalizando que devemos capturar o problema.
- */
+
