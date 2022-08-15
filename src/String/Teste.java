@@ -37,7 +37,4 @@ public class Teste {
 
 }
 
-/*
- * Classe Object Qualquer objeto pode ser referenciado pelo tipo Object. É a
- * classe raiz do Java.
- */
+
