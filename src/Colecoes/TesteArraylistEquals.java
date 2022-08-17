@@ -8,12 +8,6 @@ import herdadoconta.ContaCorrente;
 public class TesteArraylistEquals {
 
 	public static void main(String[] args) {
-		
-//		Conta cc1 = new ContaCorrente(22, 22);
-//		Conta cc2 = new ContaCorrente(22, 22);
-//		
-//		boolean igual = cc1.ehIgual(cc2);
-//		System.out.println(igual);
 
 		// Generics
 		ArrayList<Conta> lista = new ArrayList<Conta>();
