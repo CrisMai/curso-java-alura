@@ -1,4 +1,4 @@
-package Colecoes;
+package colecoes;
 
 public class Teste {
 	

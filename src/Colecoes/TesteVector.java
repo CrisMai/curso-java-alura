@@ -1,20 +1,16 @@
 package colecoes;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
+import java.util.Vector;
 import java.util.List;
 
 import herdadoconta.Conta;
 import herdadoconta.ContaCorrente;
 
-public class Linkedlist {
-
+public class TesteVector {
+	
 	public static void main(String[] args) {
-
-		// Generics
-		LinkedList<Conta> lista = new LinkedList<Conta>();
 		
-		//List<Conta> lista = new ArrayList<Conta>();
+		List<Conta> lista = new Vector<Conta>(); // Thread safe
 
 		Conta cc = new ContaCorrente(22, 11);
 		lista.add(cc);
@@ -43,12 +39,7 @@ public class Linkedlist {
 
 }
 
-/* List é uma interface, a ArrayList e
- LinkedList são implementações.
- As listas garantem a ordem de inserção. 
- Isso significa que ao iterar recebemos os elementos 
- na mesma ordem que eles foram inseridos.
- As listas sempre possuem um índice (podemos acessar 
- o elemento através da posição). Além disso, existe 
- mais uma característica: lista aceitam elementos duplicados.
+
+/* O java.util.Vector é uma ArrayList thread safe.
+ Implementa a interface List.
  */

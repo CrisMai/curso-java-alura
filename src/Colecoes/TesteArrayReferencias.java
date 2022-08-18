@@ -1,4 +1,4 @@
-package Colecoes;
+package colecoes;
 
 import bytebank.Cliente;
 import herdadoconta.Conta;

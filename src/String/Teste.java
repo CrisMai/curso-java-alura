@@ -1,4 +1,4 @@
-package String;
+package string;
 
 import bytebank.Cliente;
 import herdadoconta.Conta;
