@@ -63,7 +63,7 @@ public class OrdemNatural {
 	}
 }
 
-class TitularDaContaComparator implements Comparator<Conta> {
+class TitularDaContaComparator2 implements Comparator<Conta> {
 
 	@Override
 	public int compare(Conta c1, Conta c2) {
@@ -76,7 +76,7 @@ class TitularDaContaComparator implements Comparator<Conta> {
 	
 }
 
-class NumeroDaContaComparator implements Comparator<Conta> {
+class NumeroDaContaComparator2 implements Comparator<Conta> {
 
 	@Override
 	public int compare(Conta c1, Conta c2) {
