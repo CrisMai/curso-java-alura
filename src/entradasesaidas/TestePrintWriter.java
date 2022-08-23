@@ -1,4 +1,4 @@
-package java.Io;
+package entradasesaidas;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
