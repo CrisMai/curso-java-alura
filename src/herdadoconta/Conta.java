@@ -1,6 +1,8 @@
 package herdadoconta;
 
-public abstract class Conta extends Object implements Comparable<Conta> {
+import java.io.Serializable;
+
+public abstract class Conta extends Object implements Comparable<Conta>, Serializable {
 
 	protected double saldo;
 	private int agencia;
